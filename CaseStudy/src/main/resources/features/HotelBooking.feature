@@ -48,9 +48,38 @@ Scenario: Verify the alert box message for City
 	Given I am in the Booking form page
 	And Click on Confirm button without selecting the City
 	Then Print the alert message for City and close the browser	
-
-
+##
+Scenario: Verify the alert box message for State
+	Given I am in the Booking form page
+	And Click on Confirm button without selecting the City
+	Then Print the alert message for City and close the browser
 	
+Scenario: Select the number of people
+	Given I am in the Booking form page
+	And Select the number of people from dropdown
+	Then Print the number of people and number of Rooms and close the browser
+	
+Scenario: Verify the alert box message for Card holder Name
+	Given I am in the Booking form page
+	And Click on Confirm button without entering the Card holder Name
+	Then Print the alert message for Card holder name and close the browser
+	
+Scenario: Verify the alert box message for Debit card number
+	Given I am in the Booking form page
+	And Click on Confirm button without entering the Debit card number
+	Then Print the alert message for the Debit card number and close the browser
+	
+Scenario: Verify the alert box message for CVV
+	Given I am in the Booking form page
+	And Click on Confirm button without entering CVV
+	Then Print the alert message for the CVV and close the browser
+	
+Scenario: Verify the alert box message for Expiration Month and Year
+	Given I am in the Booking form page
+	And Click on Confirm button without entering the Expiration Month
+	And Click on Confirm button without entering the Expiration Year
+	Then Print the alert messages for Expiration Month and Year and close the browser
+	##
 Scenario: Verify the Booking complete message
 	Given I am in the Booking form page
 	And Click on Confirm button after entering all the details
